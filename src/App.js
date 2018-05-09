@@ -16,8 +16,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Form onSubmit={this.addNewCard}/>
-      <CardList cards={this.state.cards} />
+        <div className="mb-4">
+          <Form onSubmit={this.addNewCard}/>
+        </div>
+        <div className="container-fluid">
+          <CardList cards={this.state.cards} />
+        </div>
       </div>
     );
   }
